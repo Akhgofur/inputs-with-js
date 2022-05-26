@@ -12,6 +12,7 @@ const elUl = document.querySelector('.inputs__order-list')
 function logEvent(event) {
     event.preventDefault()
 
+  if(elFirstName.value.trim() && elLastName.value.trim() && elOrder.value.trim()){
     let elLi = document.createElement('li')
     elLi.className = ('inputs__order-item')
     
@@ -30,7 +31,10 @@ function logEvent(event) {
     elLi.append(elName,elUserEmail,elUserOrder)
 
     elLi.append(elName,elUserEmail,elUserOrder)
-    elUl.append(elLi)
+    elUl.append(elLi) 
+  }else{
+      alert('iltimos to\'g\'ri to\'ldiring')
+  }
 }
 
 elBtn.addEventListener('click', logEvent)

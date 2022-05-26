@@ -454,6 +454,8 @@ img {
   max-width: 50%;
   width: 100%;
   padding: 30px;
+  height: 600px;
+  overflow-x: auto;
 }
 
 .inputs__order-item {

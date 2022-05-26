@@ -32,6 +32,7 @@
     border-radius: 5px;
     color: #fff
 }
+
 .inputs__order-list {
     @include list-unstyled;
     background-color: #fff;
@@ -39,6 +40,8 @@
     max-width: 50%;
     width: 100%;
     padding: 30px;
+    height: 600px;
+    overflow-x: auto;
 }
 .inputs__order-item {
     padding: 0 10px;
